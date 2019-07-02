@@ -35,9 +35,7 @@ BamListItem.propTypes = {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
       textAlign: "left",
-      width: '100%',
       backgroundColor: '#fff',
       color: '#000',
     },
