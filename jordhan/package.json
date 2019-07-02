@@ -1,5 +1,5 @@
 {
-  "name": "bam-list",
+  "name": "bam-list-component",
   "version": "1.0.0",
   "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
   "main": "index.js",
@@ -36,7 +36,6 @@
   "peerDependencies": {
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "prop-types": "^15.7.2",
-    "bamlistitem": "@master"
+    "prop-types": "^15.7.2"
   }
 }
