@@ -2,14 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Header} from 'react-native-elements';
 
-/**
- * Color - white
- */
-const iconColor = "#fff";
-/**
- * Type - ionicon
- */
-const iconType = 'ionicon';
+import { ActionProfileShow, ActionUserDisconnect } from './constants/action'
+import { iconColor, iconType } from './constants/icon'
 
 /**
  * Generique icon component
@@ -63,9 +57,9 @@ const BamHeader = props => {
 
   return (
     <Header
-      leftComponent={leftComponent(() => onPress('USER_DISCONNECT'))}
+      leftComponent={leftComponent(() => onPress(ActionUserDisconnect))}
       centerComponent={centerComponent(title)}
-      rightComponent={rightComponent(() => onPress('PROFILE_SHOW'))}
+      rightComponent={rightComponent(() => onPress(ActionProfileShow))}
     />
   );
 };
