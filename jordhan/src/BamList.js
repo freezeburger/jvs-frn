@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
 import React from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, Text } from 'react-native'
 
 const NoRenderItem = props => <Text>No renderItems provided</Text>
 
 const BamList = ({ collection, children }) => {
-    const toRender = props.children == null
+    const toRender = children == null
         ? <NoRenderItem />
         : <FlatList 
             data={collection}
-            renderItem={(data) => <children.type item={data.item} {...children.props} />}
-            />
+            renderItem={(data) => <children.type item={data.item} {...children.props}/>}
+            keyExtractor={(item) => item.name} 
+        />
     return <View>
         {toRender}
     </View>
 }
 
 BamList.propTypes = {
-    collection: PropTypes.array.isRequired,
+    collection: PropTypes.array,
     children: PropTypes.node
 };
 
