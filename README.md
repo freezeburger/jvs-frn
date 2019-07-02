@@ -13,25 +13,25 @@ BamActions :
     * MESSAGE_SEARCH
 
 
-* BamHeader
+* BamHeader - Ludovic
     * title
     * bamAction (cb)
-* BamSearch
+* BamSearch - Lucas
     * `Alomst same as bamFiled`
     * bamAction
-* BamList
+* BamList - Jordhan
     * `Receive collection of Message Items`
     * itemCollection
-* BamListItem
+* BamListItem  - Damien
     * `Displays Message Item`
     * item
-* BamField
+* BamField - Gwennolé
     * `On filed validity call bamaction with value`
     * bamAction
-* BamGrumpyCat
+* BamGrumpyCat - Franck
     * `can be zoomed (headshot) (with sound ?)`
-* BamLogoButton
+* BamLogoButton - Axel
     * `Plays a grrr sound or a firendly miaou sound`
     * bamAction
-* BamAvatar
+* BamAvatar - Nicolas
     * `On click allow image capture`
