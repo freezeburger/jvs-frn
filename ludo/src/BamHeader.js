@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {Header} from 'react-native-elements';
 
 import { ActionProfileShow, ActionUserDisconnect } from './constants/action'
-import { iconColor, iconType } from './constants/icon'
+import { iconColor, iconType, iconDisconnect, iconProfile } from './constants/icon'
 
 /**
  * Generique icon component
@@ -21,13 +21,13 @@ const iconComponent = (icon, cb) => ({
  * Left icon component (log out)
  * @param {function} cb callback
  */
-const leftComponent = cb => iconComponent("ios-log-out", cb);
+const leftComponent = cb => iconComponent(iconDisconnect, cb);
 
 /**
  * Right icon component (profile)
  * @param {function} cb callback
  */
-const rightComponent = cb => iconComponent("ios-person", cb);
+const rightComponent = cb => iconComponent(iconProfile, cb);
 
 /**
  * Title component
@@ -68,7 +68,9 @@ const BamHeader = props => {
  * Props Types
  */
 BamHeader.propTypes = {
+  /** Titre */
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  /** Callback */
   bamAction: PropTypes.func.isRequired
 };
 
