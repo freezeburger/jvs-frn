@@ -1,7 +1,7 @@
 {
-  "name": "my-component-name",
+  "name": "BamGrumpyCat",
   "version": "1.0.0",
-  "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
+  "description": "Un grumpy cat qui zoom!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -34,8 +34,10 @@
     "metro-react-native-babel-preset": "^0.54.1"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-native": "^0.59.10",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-web": "^0.11.4",
     "react-native-elements": "^1.1.0"
   }
 }
