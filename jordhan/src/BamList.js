@@ -10,7 +10,7 @@ const BamList = ({ collection, children }) => {
         : <FlatList 
             data={collection}
             renderItem={(data) => <children.type item={data.item} {...children.props}/>}
-            keyExtractor={(item) => item.name} 
+            keyExtractor={(item, index) => index.toString()} 
         />
     return <View>
         {toRender}
