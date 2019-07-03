@@ -3,7 +3,7 @@
 
 ## Props
 
-* title (string | ReactElement): titre du header
+* title (string | React.ReactElement): titre du header
 * bamAction (function): callback
   * action:
     * SHOW_PROFILE
@@ -12,21 +12,21 @@
 ## Usage
 
 ```jsx
-<BamHeader bamAction={console.log} />
+<BamHeader bamAction={console.warn} />
 ```
 
 ```jsx
-<BamHeader 
-  bamAction={console.log}
-  title="Titre"
+<BamHeader
+  bamAction={console.warn}
+  title="Miaou"
 />
 ```
 
 ```jsx
-<BamHeader 
-  bamAction={console.log}
+<BamHeader
+  bamAction={console.warn}
   title={
-      <Text>Titre</Text>
+      <Text>Miaou</Text>
   }
 />
 ```
