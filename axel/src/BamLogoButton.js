@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React from 'react'
 import PropTypes from 'prop-types';
 
+import { Audio } from 'expo-av';
 import { TouchableOpacity } from 'react-native';
 import { Image } from 'react-native-elements';
 
@@ -15,7 +16,18 @@ const BamLogoButton = (props) => {
     /**
      * Handle Press Image.
      */
-    const handlePress = () => { _.invoke(props, 'bamAction'); };
+    const handlePress = async () => { 
+        const soundObject = new Audio.Sound();
+        try {
+          await soundObject.loadAsync(require('../assets/cat.mp3'));
+          await soundObject.playAsync();
+          // Your sound is playing!
+        } catch (error) {
+          // An error occurred!
+        }
+        _.invoke(props, 'bamAction');
+    
+    };
 
     const { 
         width,
