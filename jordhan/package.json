@@ -1,14 +1,14 @@
 {
   "name": "bam-list-component",
   "version": "1.0.0",
-  "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
+  "description": "A simple and fully customizable React Native component that implements a list of items.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/url-of-component"
+    "url": "git+https://github.com/freezeburger/jvs-frn"
   },
   "keywords": [
     "react-native",
@@ -24,18 +24,18 @@
     "progress",
     "progress-steps"
   ],
-  "author": "Colby Miller",
+  "author": "Jordhan Servas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/url-of-component"
+    "url": "https://github.com/freezeburger/jvs-frn"
   },
-  "homepage": "https://github.com/url-of-component#readme",
+  "homepage": "https://github.com/freezeburger/jvs-frn#readme",
   "devDependencies": {
-    "metro-react-native-babel-preset": "^0.54.1"
+    "metro-react-native-babel-preset": "^0.54.1",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "prop-types": "^15.7.2"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
   }
 }
